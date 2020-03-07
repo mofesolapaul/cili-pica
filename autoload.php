@@ -15,10 +15,10 @@
  * An example of a project-specific implementation.
  *
  * After registering this autoload function with SPL, the following line
- * would cause the function to attempt to load the \OpenAPI\Server\Baz\Qux class
+ * would cause the function to attempt to load the \CiliPica\Baz\Qux class
  * from /path/to/project/./Baz/Qux.php:
  *
- *      new \OpenAPI\Server\Baz\Qux;
+ *      new \CiliPica\Baz\Qux;
  *
  * @param string $class The fully-qualified class name.
  *
@@ -27,7 +27,7 @@
 spl_autoload_register(function ($class) {
 
     // project-specific namespace prefix
-    $prefix = 'OpenAPI\\Server\\';
+    $prefix = 'CiliPica\\';
 
     // base directory for the namespace prefix
     $base_dir = __DIR__ . '/./';

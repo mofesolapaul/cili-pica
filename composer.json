@@ -33,7 +33,7 @@
         "hoa/regex": "~1.0"
     },
     "autoload": {
-        "psr-4": { "OpenAPI\\Server\\" : "./" }
+        "psr-4": { "CiliPica\\" : "./" }
     },
     "config": {
         "platform": {

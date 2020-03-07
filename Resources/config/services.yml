@@ -3,15 +3,15 @@
 # Do not edit the class manually.
 
 parameters:
-    open_api_server.serializer: 'OpenAPI\Server\Service\JmsSerializer'
-    open_api_server.validator:  'OpenAPI\Server\Service\SymfonyValidator'
+    open_api_server.serializer: 'CiliPica\Service\JmsSerializer'
+    open_api_server.validator:  'CiliPica\Service\SymfonyValidator'
 
 services:
     open_api_server.api.api_server:
-        class: OpenAPI\Server\Api\ApiServer
+        class: CiliPica\Api\ApiServer
 
     open_api_server.model.model_serializer:
-        class: OpenAPI\Server\Model\ModelSerializer
+        class: CiliPica\Model\ModelSerializer
 
     open_api_server.service.serializer:
         class: '%open_api_server.serializer%'
@@ -22,7 +22,7 @@ services:
             - '@validator'
 
     open_api_server.controller.meal:
-        class: OpenAPI\Server\Controller\MealController
+        class: CiliPica\Controller\MealController
         calls:
          - [setSerializer, ['@open_api_server.service.serializer']]
          - [setValidator,  ['@open_api_server.service.validator']]
@@ -31,7 +31,7 @@ services:
         autowire: true
 
     open_api_server.controller.restaurant:
-        class: OpenAPI\Server\Controller\RestaurantController
+        class: CiliPica\Controller\RestaurantController
         calls:
          - [setSerializer, ['@open_api_server.service.serializer']]
          - [setValidator,  ['@open_api_server.service.validator']]
@@ -40,7 +40,7 @@ services:
         autowire: true
 
     open_api_server.controller.user:
-        class: OpenAPI\Server\Controller\UserController
+        class: CiliPica\Controller\UserController
         calls:
          - [setSerializer, ['@open_api_server.service.serializer']]
          - [setValidator,  ['@open_api_server.service.validator']]

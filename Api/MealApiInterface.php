@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Server
+ * @package  CiliPica
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Server\Api;
+namespace CiliPica\Api;
 
 use Symfony\Component\HttpFoundation\File\UploadedFile;
-use OpenAPI\Server\Model\ApiResponse;
-use OpenAPI\Server\Model\Meal;
+use CiliPica\Model\ApiResponse;
+use CiliPica\Model\Meal;
 
 /**
  * MealApiInterface Interface Doc Comment
  *
  * @category Interface
- * @package  OpenAPI\Server\Api
+ * @package  CiliPica\Api
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -57,7 +57,7 @@ interface MealApiInterface
      *
      * Add a new meal to the restaurant
      *
-     * @param  OpenAPI\Server\Model\Meal $body  Meal object that needs to be added to the restaurant (required)
+     * @param  CiliPica\Model\Meal $body  Meal object that needs to be added to the restaurant (required)
      * @param  integer $responseCode     The HTTP response code to return
      * @param  array   $responseHeaders  Additional HTTP headers to return with the response ()
      *
@@ -90,7 +90,7 @@ interface MealApiInterface
      * @param  integer $responseCode     The HTTP response code to return
      * @param  array   $responseHeaders  Additional HTTP headers to return with the response ()
      *
-     * @return OpenAPI\Server\Model\Meal[]
+     * @return CiliPica\Model\Meal[]
      *
      */
     public function findMealsByStatus(array $status, &$responseCode, array &$responseHeaders);
@@ -104,7 +104,7 @@ interface MealApiInterface
      * @param  integer $responseCode     The HTTP response code to return
      * @param  array   $responseHeaders  Additional HTTP headers to return with the response ()
      *
-     * @return OpenAPI\Server\Model\Meal
+     * @return CiliPica\Model\Meal
      *
      */
     public function getMealById($mealId, &$responseCode, array &$responseHeaders);
@@ -114,7 +114,7 @@ interface MealApiInterface
      *
      * Update an existing meal
      *
-     * @param  OpenAPI\Server\Model\Meal $body  Meal object that needs to be added to the restaurant (required)
+     * @param  CiliPica\Model\Meal $body  Meal object that needs to be added to the restaurant (required)
      * @param  integer $responseCode     The HTTP response code to return
      * @param  array   $responseHeaders  Additional HTTP headers to return with the response ()
      *
@@ -150,7 +150,7 @@ interface MealApiInterface
      * @param  integer $responseCode     The HTTP response code to return
      * @param  array   $responseHeaders  Additional HTTP headers to return with the response ()
      *
-     * @return OpenAPI\Server\Model\ApiResponse
+     * @return CiliPica\Model\ApiResponse
      *
      */
     public function uploadFile($mealId, $additionalMetadata = null, UploadedFile $file = null, &$responseCode, array &$responseHeaders);

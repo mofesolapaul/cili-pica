@@ -1,4 +1,4 @@
-# OpenAPI\Server\Api\RestaurantApiInterface
+# CiliPica\Api\RestaurantApiInterface
 
 All URIs are relative to *http://localhost*
 
@@ -34,7 +34,7 @@ Delete purchase order by ID
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\RestaurantApiInterface;
+use CiliPica\Api\RestaurantApiInterface;
 
 class RestaurantApi implements RestaurantApiInterface
 {
@@ -75,7 +75,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 ## **getMenu**
-> OpenAPI\Server\Model\Meal getMenu()
+> CiliPica\Model\Meal getMenu()
 
 Returns only available meals
 
@@ -88,7 +88,7 @@ Returns an array of meals
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\RestaurantApiInterface;
+use CiliPica\Api\RestaurantApiInterface;
 
 class RestaurantApi implements RestaurantApiInterface
 {
@@ -120,7 +120,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**OpenAPI\Server\Model\Meal**](../Model/Meal.md)
+[**CiliPica\Model\Meal**](../Model/Meal.md)
 
 ### Authorization
 
@@ -134,7 +134,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 ## **getOrderById**
-> OpenAPI\Server\Model\Order getOrderById($orderId)
+> CiliPica\Model\Order getOrderById($orderId)
 
 Find purchase order by ID
 
@@ -145,7 +145,7 @@ Find purchase order by ID
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\RestaurantApiInterface;
+use CiliPica\Api\RestaurantApiInterface;
 
 class RestaurantApi implements RestaurantApiInterface
 {
@@ -172,7 +172,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**OpenAPI\Server\Model\Order**](../Model/Order.md)
+[**CiliPica\Model\Order**](../Model/Order.md)
 
 ### Authorization
 
@@ -186,7 +186,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 ## **placeOrder**
-> OpenAPI\Server\Model\Order placeOrder($body)
+> CiliPica\Model\Order placeOrder($body)
 
 Place an order for a meal
 
@@ -197,7 +197,7 @@ Place an order for a meal
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\RestaurantApiInterface;
+use CiliPica\Api\RestaurantApiInterface;
 
 class RestaurantApi implements RestaurantApiInterface
 {
@@ -220,11 +220,11 @@ class RestaurantApi implements RestaurantApiInterface
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**OpenAPI\Server\Model\Order**](../Model/Order.md)| order placed for purchasing the meal |
+ **body** | [**CiliPica\Model\Order**](../Model/Order.md)| order placed for purchasing the meal |
 
 ### Return type
 
-[**OpenAPI\Server\Model\Order**](../Model/Order.md)
+[**CiliPica\Model\Order**](../Model/Order.md)
 
 ### Authorization
 

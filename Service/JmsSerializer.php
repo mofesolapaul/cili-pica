@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenAPI\Server\Service;
+namespace CiliPica\Service;
 
 use JMS\Serializer\SerializerBuilder;
 use JMS\Serializer\Naming\CamelCaseNamingStrategy;

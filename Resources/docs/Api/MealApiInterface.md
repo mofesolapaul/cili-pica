@@ -1,4 +1,4 @@
-# OpenAPI\Server\Api\MealApiInterface
+# CiliPica\Api\MealApiInterface
 
 All URIs are relative to *http://localhost*
 
@@ -37,7 +37,7 @@ Add a new meal to the restaurant
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\MealApiInterface;
+use CiliPica\Api\MealApiInterface;
 
 class MealApi implements MealApiInterface
 {
@@ -68,7 +68,7 @@ class MealApi implements MealApiInterface
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**OpenAPI\Server\Model\Meal**](../Model/Meal.md)| Meal object that needs to be added to the restaurant |
+ **body** | [**CiliPica\Model\Meal**](../Model/Meal.md)| Meal object that needs to be added to the restaurant |
 
 ### Return type
 
@@ -97,7 +97,7 @@ Deletes a meal
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\MealApiInterface;
+use CiliPica\Api\MealApiInterface;
 
 class MealApi implements MealApiInterface
 {
@@ -147,7 +147,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 ## **findMealsByStatus**
-> OpenAPI\Server\Model\Meal findMealsByStatus($status)
+> CiliPica\Model\Meal findMealsByStatus($status)
 
 Finds Meals by status
 
@@ -160,7 +160,7 @@ Multiple status values can be provided with comma separated strings
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\MealApiInterface;
+use CiliPica\Api\MealApiInterface;
 
 class MealApi implements MealApiInterface
 {
@@ -195,7 +195,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**OpenAPI\Server\Model\Meal**](../Model/Meal.md)
+[**CiliPica\Model\Meal**](../Model/Meal.md)
 
 ### Authorization
 
@@ -209,7 +209,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 ## **getMealById**
-> OpenAPI\Server\Model\Meal getMealById($mealId)
+> CiliPica\Model\Meal getMealById($mealId)
 
 Find meal by ID
 
@@ -222,7 +222,7 @@ Returns a single meal
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\MealApiInterface;
+use CiliPica\Api\MealApiInterface;
 
 class MealApi implements MealApiInterface
 {
@@ -257,7 +257,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**OpenAPI\Server\Model\Meal**](../Model/Meal.md)
+[**CiliPica\Model\Meal**](../Model/Meal.md)
 
 ### Authorization
 
@@ -282,7 +282,7 @@ Update an existing meal
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\MealApiInterface;
+use CiliPica\Api\MealApiInterface;
 
 class MealApi implements MealApiInterface
 {
@@ -313,7 +313,7 @@ class MealApi implements MealApiInterface
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**OpenAPI\Server\Model\Meal**](../Model/Meal.md)| Meal object that needs to be added to the restaurant |
+ **body** | [**CiliPica\Model\Meal**](../Model/Meal.md)| Meal object that needs to be added to the restaurant |
 
 ### Return type
 
@@ -342,7 +342,7 @@ Updates a meal in the restaurant with form data
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\MealApiInterface;
+use CiliPica\Api\MealApiInterface;
 
 class MealApi implements MealApiInterface
 {
@@ -393,7 +393,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 ## **uploadFile**
-> OpenAPI\Server\Model\ApiResponse uploadFile($mealId, $additionalMetadata, $file)
+> CiliPica\Model\ApiResponse uploadFile($mealId, $additionalMetadata, $file)
 
 uploads an image
 
@@ -404,7 +404,7 @@ uploads an image
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\MealApiInterface;
+use CiliPica\Api\MealApiInterface;
 
 class MealApi implements MealApiInterface
 {
@@ -441,7 +441,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**OpenAPI\Server\Model\ApiResponse**](../Model/ApiResponse.md)
+[**CiliPica\Model\ApiResponse**](../Model/ApiResponse.md)
 
 ### Authorization
 

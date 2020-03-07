@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Server\Api
+ * @package  CiliPica\Api
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Server\Api;
+namespace CiliPica\Api;
 
 /**
  * ApiServer Class Doc Comment
@@ -35,7 +35,7 @@ namespace OpenAPI\Server\Api;
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Server\Api
+ * @package  CiliPica\Api
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */

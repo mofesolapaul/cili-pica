@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-namespace OpenAPI\Server\Service;
+namespace CiliPica\Service;
 
 use JMS\Serializer\Context;
 use JMS\Serializer\JsonDeserializationVisitor;

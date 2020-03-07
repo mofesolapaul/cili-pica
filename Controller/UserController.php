@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Server\Controller
+ * @package  CiliPica\Controller
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Server\Controller;
+namespace CiliPica\Controller;
 
 use \Exception;
 use JMS\Serializer\Exception\RuntimeException as SerializerRuntimeException;
@@ -35,14 +35,14 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\Validator\Constraints as Assert;
-use OpenAPI\Server\Api\UserApiInterface;
-use OpenAPI\Server\Model\User;
+use CiliPica\Api\UserApiInterface;
+use CiliPica\Model\User;
 
 /**
  * UserController Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Server\Controller
+ * @package  CiliPica\Controller
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -76,7 +76,7 @@ class UserController extends Controller
 
         // Deserialize the input values that needs it
         try {
-            $body = $this->deserialize($body, 'OpenAPI\Server\Model\User', $inputFormat);
+            $body = $this->deserialize($body, 'CiliPica\Model\User', $inputFormat);
         } catch (SerializerRuntimeException $exception) {
             return $this->createBadRequestResponse($exception->getMessage());
         }
@@ -84,7 +84,7 @@ class UserController extends Controller
         // Validate the input values
         $asserts = [];
         $asserts[] = new Assert\NotNull();
-        $asserts[] = new Assert\Type("OpenAPI\Server\Model\User");
+        $asserts[] = new Assert\Type("CiliPica\Model\User");
         $asserts[] = new Assert\Valid();
         $response = $this->validate($body, $asserts);
         if ($response instanceof Response) {
@@ -450,7 +450,7 @@ class UserController extends Controller
         // Deserialize the input values that needs it
         try {
             $username = $this->deserialize($username, 'string', 'string');
-            $body = $this->deserialize($body, 'OpenAPI\Server\Model\User', $inputFormat);
+            $body = $this->deserialize($body, 'CiliPica\Model\User', $inputFormat);
         } catch (SerializerRuntimeException $exception) {
             return $this->createBadRequestResponse($exception->getMessage());
         }
@@ -465,7 +465,7 @@ class UserController extends Controller
         }
         $asserts = [];
         $asserts[] = new Assert\NotNull();
-        $asserts[] = new Assert\Type("OpenAPI\Server\Model\User");
+        $asserts[] = new Assert\Type("CiliPica\Model\User");
         $asserts[] = new Assert\Valid();
         $response = $this->validate($body, $asserts);
         if ($response instanceof Response) {

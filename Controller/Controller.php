@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Server\Controller
+ * @package  CiliPica\Controller
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -27,19 +27,19 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Server\Controller;
+namespace CiliPica\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\HttpException;
-use OpenAPI\Server\Service\SerializerInterface;
-use OpenAPI\Server\Service\ValidatorInterface;
+use CiliPica\Service\SerializerInterface;
+use CiliPica\Service\ValidatorInterface;
 
 /**
  * Controller Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Server\Controller
+ * @package  CiliPica\Controller
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */

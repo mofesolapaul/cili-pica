@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Server\Model
+ * @package  CiliPica\Model
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Server\Model;
+namespace CiliPica\Model;
 
 use Symfony\Component\Validator\Constraints as Assert;
 use JMS\Serializer\Annotation\Type;
@@ -36,7 +36,7 @@ use JMS\Serializer\Annotation\SerializedName;
 /**
  * Class representing the User model.
  *
- * @package OpenAPI\Server\Model
+ * @package CiliPica\Model
  * @author  OpenAPI Generator team
  */
 class User 

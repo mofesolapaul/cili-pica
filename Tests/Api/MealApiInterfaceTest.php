@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Server\Tests\Api
+ * @package  CiliPica\Tests\Api
  * @author   openapi-generator contributors
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -26,19 +26,19 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace OpenAPI\Server\Tests\Api;
+namespace CiliPica\Tests\Api;
 
-use OpenAPI\Server\Configuration;
-use OpenAPI\Server\ApiClient;
-use OpenAPI\Server\ApiException;
-use OpenAPI\Server\ObjectSerializer;
+use CiliPica\Configuration;
+use CiliPica\ApiClient;
+use CiliPica\ApiException;
+use CiliPica\ObjectSerializer;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 /**
  * MealApiInterfaceTest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Server\Tests\Api
+ * @package  CiliPica\Tests\Api
  * @author   openapi-generator contributors
  * @link     https://github.com/openapitools/openapi-generator
  */

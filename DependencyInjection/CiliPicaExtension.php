@@ -1,11 +1,11 @@
 <?php
 /**
- * OpenAPIServerBundle
+ * CiliPicaExtension
  *
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Server
+ * @package  CiliPica\DependencyInjection
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -27,24 +27,31 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Server;
+namespace CiliPica\DependencyInjection;
 
-use Symfony\Component\HttpKernel\Bundle\Bundle;
+use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
-use OpenAPI\Server\DependencyInjection\Compiler\OpenAPIServerApiPass;
+use Symfony\Component\DependencyInjection\Extension\Extension;
+use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
 /**
- * OpenAPIServerBundle Class Doc Comment
+ * CiliPicaExtension Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Server
+ * @package  CiliPica\DependencyInjection
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
-class OpenAPIServerBundle extends Bundle
+class CiliPicaExtension extends Extension
 {
-    public function build(ContainerBuilder $container)
+    public function load(array $configs, ContainerBuilder $container)
     {
-        $container->addCompilerPass(new OpenAPIServerApiPass());
+        $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
+        $loader->load('services.yml');
+    }
+
+    public function getAlias()
+    {
+        return 'open_api_server';
     }
 }

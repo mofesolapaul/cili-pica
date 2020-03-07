@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Server\Controller
+ * @package  CiliPica\Controller
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Server\Controller;
+namespace CiliPica\Controller;
 
 use \Exception;
 use JMS\Serializer\Exception\RuntimeException as SerializerRuntimeException;
@@ -35,15 +35,15 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\Validator\Constraints as Assert;
-use OpenAPI\Server\Api\MealApiInterface;
-use OpenAPI\Server\Model\ApiResponse;
-use OpenAPI\Server\Model\Meal;
+use CiliPica\Api\MealApiInterface;
+use CiliPica\Model\ApiResponse;
+use CiliPica\Model\Meal;
 
 /**
  * MealController Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Server\Controller
+ * @package  CiliPica\Controller
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -80,7 +80,7 @@ class MealController extends Controller
 
         // Deserialize the input values that needs it
         try {
-            $body = $this->deserialize($body, 'OpenAPI\Server\Model\Meal', $inputFormat);
+            $body = $this->deserialize($body, 'CiliPica\Model\Meal', $inputFormat);
         } catch (SerializerRuntimeException $exception) {
             return $this->createBadRequestResponse($exception->getMessage());
         }
@@ -88,7 +88,7 @@ class MealController extends Controller
         // Validate the input values
         $asserts = [];
         $asserts[] = new Assert\NotNull();
-        $asserts[] = new Assert\Type("OpenAPI\Server\Model\Meal");
+        $asserts[] = new Assert\Type("CiliPica\Model\Meal");
         $asserts[] = new Assert\Valid();
         $response = $this->validate($body, $asserts);
         if ($response instanceof Response) {
@@ -424,7 +424,7 @@ class MealController extends Controller
 
         // Deserialize the input values that needs it
         try {
-            $body = $this->deserialize($body, 'OpenAPI\Server\Model\Meal', $inputFormat);
+            $body = $this->deserialize($body, 'CiliPica\Model\Meal', $inputFormat);
         } catch (SerializerRuntimeException $exception) {
             return $this->createBadRequestResponse($exception->getMessage());
         }
@@ -432,7 +432,7 @@ class MealController extends Controller
         // Validate the input values
         $asserts = [];
         $asserts[] = new Assert\NotNull();
-        $asserts[] = new Assert\Type("OpenAPI\Server\Model\Meal");
+        $asserts[] = new Assert\Type("CiliPica\Model\Meal");
         $asserts[] = new Assert\Valid();
         $response = $this->validate($body, $asserts);
         if ($response instanceof Response) {

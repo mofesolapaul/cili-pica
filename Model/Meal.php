@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Server\Model
+ * @package  CiliPica\Model
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Server\Model;
+namespace CiliPica\Model;
 
 use Symfony\Component\Validator\Constraints as Assert;
 use JMS\Serializer\Annotation\Type;
@@ -36,7 +36,7 @@ use JMS\Serializer\Annotation\SerializedName;
 /**
  * Class representing the Meal model.
  *
- * @package OpenAPI\Server\Model
+ * @package CiliPica\Model
  * @author  OpenAPI Generator team
  */
 class Meal 
@@ -50,10 +50,10 @@ class Meal
     protected $id;
 
     /**
-     * @var OpenAPI\Server\Model\Category|null
+     * @var CiliPica\Model\Category|null
      * @SerializedName("category")
-     * @Assert\Type("OpenAPI\Server\Model\Category")
-     * @Type("OpenAPI\Server\Model\Category")
+     * @Assert\Type("CiliPica\Model\Category")
+     * @Type("CiliPica\Model\Category")
      */
     protected $category;
 
@@ -140,7 +140,7 @@ class Meal
     /**
      * Gets category.
      *
-     * @return OpenAPI\Server\Model\Category|null
+     * @return CiliPica\Model\Category|null
      */
     public function getCategory()
     {
@@ -150,7 +150,7 @@ class Meal
     /**
      * Sets category.
      *
-     * @param OpenAPI\Server\Model\Category|null $category
+     * @param CiliPica\Model\Category|null $category
      *
      * @return $this
      */

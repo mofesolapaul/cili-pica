@@ -1,4 +1,4 @@
-# OpenAPI\Server\Api\UserApiInterface
+# CiliPica\Api\UserApiInterface
 
 All URIs are relative to *http://localhost*
 
@@ -38,7 +38,7 @@ This can only be done by the logged in user.
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\UserApiInterface;
+use CiliPica\Api\UserApiInterface;
 
 class UserApi implements UserApiInterface
 {
@@ -61,7 +61,7 @@ class UserApi implements UserApiInterface
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**OpenAPI\Server\Model\User**](../Model/User.md)| Created user object |
+ **body** | [**CiliPica\Model\User**](../Model/User.md)| Created user object |
 
 ### Return type
 
@@ -92,7 +92,7 @@ This can only be done by the logged in user.
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\UserApiInterface;
+use CiliPica\Api\UserApiInterface;
 
 class UserApi implements UserApiInterface
 {
@@ -133,7 +133,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 ## **getUserByName**
-> OpenAPI\Server\Model\User getUserByName($username)
+> CiliPica\Model\User getUserByName($username)
 
 Get user by user name
 
@@ -144,7 +144,7 @@ Get user by user name
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\UserApiInterface;
+use CiliPica\Api\UserApiInterface;
 
 class UserApi implements UserApiInterface
 {
@@ -171,7 +171,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**OpenAPI\Server\Model\User**](../Model/User.md)
+[**CiliPica\Model\User**](../Model/User.md)
 
 ### Authorization
 
@@ -196,7 +196,7 @@ Logs user into the system
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\UserApiInterface;
+use CiliPica\Api\UserApiInterface;
 
 class UserApi implements UserApiInterface
 {
@@ -249,7 +249,7 @@ Logs out current logged in user session
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\UserApiInterface;
+use CiliPica\Api\UserApiInterface;
 
 class UserApi implements UserApiInterface
 {
@@ -300,7 +300,7 @@ This can only be done by the logged in user.
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\UserApiInterface;
+use CiliPica\Api\UserApiInterface;
 
 class UserApi implements UserApiInterface
 {
@@ -324,7 +324,7 @@ class UserApi implements UserApiInterface
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **username** | **string**| name that need to be updated |
- **body** | [**OpenAPI\Server\Model\User**](../Model/User.md)| Updated user object |
+ **body** | [**CiliPica\Model\User**](../Model/User.md)| Updated user object |
 
 ### Return type
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenAPI\Server\Service;
+namespace CiliPica\Service;
 
 use Symfony\Component\Validator\Validator\ValidatorInterface as SymfonyValidatorInterface;
 

@@ -1,11 +1,11 @@
 <?php
 /**
- * OpenAPIServerApiPass
+ * CiliPicaApiPass
  *
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Server\DependencyInjection\Compiler
+ * @package  CiliPica\DependencyInjection\Compiler
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -27,21 +27,21 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Server\DependencyInjection\Compiler;
+namespace CiliPica\DependencyInjection\Compiler;
 
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Reference;
 
 /**
- * OpenAPIServerApiPass Class Doc Comment
+ * CiliPicaApiPass Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Server\DependencyInjection\Compiler
+ * @package  CiliPica\DependencyInjection\Compiler
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
-class OpenAPIServerApiPass implements CompilerPassInterface
+class CiliPicaApiPass implements CompilerPassInterface
 {
 
     /**

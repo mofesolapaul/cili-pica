@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | [optional] 
-**category** | [**OpenAPI\Server\Model\Category**](Category.md) |  | [optional] 
+**category** | [**CiliPica\Model\Category**](Category.md) |  | [optional] 
 **name** | **string** |  | 
 **price** | **int** | Price in cents | 
 **photoUrls** | **string** |  | 

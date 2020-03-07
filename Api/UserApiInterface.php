@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Server
+ * @package  CiliPica
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Server\Api;
+namespace CiliPica\Api;
 
 use Symfony\Component\HttpFoundation\File\UploadedFile;
-use OpenAPI\Server\Model\User;
+use CiliPica\Model\User;
 
 /**
  * UserApiInterface Interface Doc Comment
  *
  * @category Interface
- * @package  OpenAPI\Server\Api
+ * @package  CiliPica\Api
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -47,7 +47,7 @@ interface UserApiInterface
      *
      * Create user
      *
-     * @param  OpenAPI\Server\Model\User $body  Created user object (required)
+     * @param  CiliPica\Model\User $body  Created user object (required)
      * @param  integer $responseCode     The HTTP response code to return
      * @param  array   $responseHeaders  Additional HTTP headers to return with the response ()
      *
@@ -79,7 +79,7 @@ interface UserApiInterface
      * @param  integer $responseCode     The HTTP response code to return
      * @param  array   $responseHeaders  Additional HTTP headers to return with the response ()
      *
-     * @return OpenAPI\Server\Model\User
+     * @return CiliPica\Model\User
      *
      */
     public function getUserByName($username, &$responseCode, array &$responseHeaders);
@@ -118,7 +118,7 @@ interface UserApiInterface
      * Updated user
      *
      * @param  string $username  name that need to be updated (required)
-     * @param  OpenAPI\Server\Model\User $body  Updated user object (required)
+     * @param  CiliPica\Model\User $body  Updated user object (required)
      * @param  integer $responseCode     The HTTP response code to return
      * @param  array   $responseHeaders  Additional HTTP headers to return with the response ()
      *

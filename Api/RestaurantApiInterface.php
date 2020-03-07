@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Server
+ * @package  CiliPica
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Server\Api;
+namespace CiliPica\Api;
 
 use Symfony\Component\HttpFoundation\File\UploadedFile;
-use OpenAPI\Server\Model\Meal;
-use OpenAPI\Server\Model\Order;
+use CiliPica\Model\Meal;
+use CiliPica\Model\Order;
 
 /**
  * RestaurantApiInterface Interface Doc Comment
  *
  * @category Interface
- * @package  OpenAPI\Server\Api
+ * @package  CiliPica\Api
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -74,7 +74,7 @@ interface RestaurantApiInterface
      * @param  integer $responseCode     The HTTP response code to return
      * @param  array   $responseHeaders  Additional HTTP headers to return with the response ()
      *
-     * @return OpenAPI\Server\Model\Meal[]
+     * @return CiliPica\Model\Meal[]
      *
      */
     public function getMenu(&$responseCode, array &$responseHeaders);
@@ -88,7 +88,7 @@ interface RestaurantApiInterface
      * @param  integer $responseCode     The HTTP response code to return
      * @param  array   $responseHeaders  Additional HTTP headers to return with the response ()
      *
-     * @return OpenAPI\Server\Model\Order
+     * @return CiliPica\Model\Order
      *
      */
     public function getOrderById($orderId, &$responseCode, array &$responseHeaders);
@@ -98,11 +98,11 @@ interface RestaurantApiInterface
      *
      * Place an order for a meal
      *
-     * @param  OpenAPI\Server\Model\Order $body  order placed for purchasing the meal (required)
+     * @param  CiliPica\Model\Order $body  order placed for purchasing the meal (required)
      * @param  integer $responseCode     The HTTP response code to return
      * @param  array   $responseHeaders  Additional HTTP headers to return with the response ()
      *
-     * @return OpenAPI\Server\Model\Order
+     * @return CiliPica\Model\Order
      *
      */
     public function placeOrder(Order $body, &$responseCode, array &$responseHeaders);

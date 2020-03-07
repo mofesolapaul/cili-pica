@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Server\Controller
+ * @package  CiliPica\Controller
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Server\Controller;
+namespace CiliPica\Controller;
 
 use \Exception;
 use JMS\Serializer\Exception\RuntimeException as SerializerRuntimeException;
@@ -35,15 +35,15 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\Validator\Constraints as Assert;
-use OpenAPI\Server\Api\RestaurantApiInterface;
-use OpenAPI\Server\Model\Meal;
-use OpenAPI\Server\Model\Order;
+use CiliPica\Api\RestaurantApiInterface;
+use CiliPica\Model\Meal;
+use CiliPica\Model\Order;
 
 /**
  * RestaurantController Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Server\Controller
+ * @package  CiliPica\Controller
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -310,7 +310,7 @@ class RestaurantController extends Controller
 
         // Deserialize the input values that needs it
         try {
-            $body = $this->deserialize($body, 'OpenAPI\Server\Model\Order', $inputFormat);
+            $body = $this->deserialize($body, 'CiliPica\Model\Order', $inputFormat);
         } catch (SerializerRuntimeException $exception) {
             return $this->createBadRequestResponse($exception->getMessage());
         }
@@ -318,7 +318,7 @@ class RestaurantController extends Controller
         // Validate the input values
         $asserts = [];
         $asserts[] = new Assert\NotNull();
-        $asserts[] = new Assert\Type("OpenAPI\Server\Model\Order");
+        $asserts[] = new Assert\Type("CiliPica\Model\Order");
         $asserts[] = new Assert\Valid();
         $response = $this->validate($body, $asserts);
         if ($response instanceof Response) {
